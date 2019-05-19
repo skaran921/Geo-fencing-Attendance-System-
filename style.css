@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url("11.jpg") no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body #overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+body .spinner {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #f25a41;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.main {
+    display: none;
+    width: 400px;
+    margin: 4px;
+    padding: 30px;
+    margin-top: 12%;
+    background: rgba(200, 200, 200, 0.1);
+    border-radius: 7px;
+    -webkit-box-shadow: 3px 0px 6px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 3px 10px rgba(0, 0, 0, 0.12);
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+.main h1 {
+    margin-top: -10px;
+}
+
+.main .myForm {
+    padding: 1;
+    margin-top: 10px;
+}
+
+.main .myForm form input {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 13px;
+    font-weight: bold;
+    border-radius: 60px;
+    border: none;
+    margin: 3px;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.main .myForm form input:focus {
+    border: 2px solid #27ae60;
+}
+
+.main .myForm form .btn {
+    width: 100%;
+    background: #03A9F4;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px;
+    border: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 7px;
+    font-size: 20px;
+    -webkit-box-shadow: 0px 6px 6px 6px #fff;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.12);
+    border-radius: 70px;
+    outline: none;
+}
+
+.main .myForm form .btn:hover {
+    transition: 1s;
+    background: #1cbf9a;
+    outline: none;
+}
+
+@media (max-width: 762px) {
+    .main {
+        width: 300px;
+        margin-top: 25%;
+    }
+}
+
+@media (max-width: 600px) {
+    .errMsg {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .errMsg {
+        width: 63% !important;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,85 @@
+#heading {
+    background: teal;
+    color: #fff;
+    box-shadow: 0px 3px 4px #999666;
+    font-family: "Courier New", Courier, monospace;
+}
+
+body #topInfo {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    width: 100%;
+    box-shadow: 0px 1px 3px #999666;
+    padding: 3px;
+    text-align: center;
+}
+
+#main {
+    width: 300px;
+    box-shadow: 0px 3px 4px #999666;
+    padding: 20px;
+    text-align: left;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#main #form label,
+select {
+    display: block;
+    margin: 7px;
+}
+
+input {
+    padding: 7px;
+    width: 80%;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+    max-width: 200px;
+}
+
+select {
+    padding: 7px;
+    width: 80%;
+    box-shadow: 0px 1px 3px #999666;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+
+option {
+    -webkit-appearance: none;
+    background: #111;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#info {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 7px;
+    background: #f00;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    transition: 0.9s ease-in;
+    background: #fff;
+    border: 1px solid #f00;
+    color: #f00;
+}
