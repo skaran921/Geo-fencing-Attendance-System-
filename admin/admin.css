@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+h1 {
+    color: #666999;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#myForm {
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.23);
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    padding: 20px;
+    width: 300px !important;
+    color: #fff;
+    position: absolute;
+    height: 260px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+#myForm #form-header {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#myForm .form-group label,
+input,
+select {
+    display: block;
+    margin-top: 10px;
+    background: none;
+}
+
+#myForm input,
+select {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 17px;
+    outline: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px;
+    background: #0652DD;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    transition: ease-in-out 1s;
+    background: #000099;
+    color: #f4f4f4;
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 5vw;
+    }
+    #myForm {
+        width: 200px;
+    }
+}
+
+@media (max-width: 300px) {
+    h1 {
+        font-size: 4vw;
+    }
+    #myForm {
+        width: 150px;
+    }
+}
