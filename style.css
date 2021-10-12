@@ -62,7 +62,7 @@ label {
 }
 
 button {
-  transition: 3s ease-in;
+  transition: 0.3s ease-in;
   font-size: 2rem !important;
   padding: 10px 15px !important;
   background-color: #17055a;
@@ -84,4 +84,12 @@ button:hover {
   border-radius: 60px;
   background: rgba(0, 0, 0, 0.6);
   padding: 10px 20px;
+}
+
+.fa {
+  color: #fff;
+}
+
+label {
+  color: #fff;
 }
