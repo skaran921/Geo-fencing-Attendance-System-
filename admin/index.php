@@ -46,6 +46,26 @@ session_start();
 
     </div>
   </div>
+  <!-- Modal content-->
+  <div class="modal-content">
+      <div class="modal-body">
+      <div class="row">
+      <center><img src="images/explanation.png" width="100px" height="100px" alt=""></center>
+      </div>
+      <div class="message">
+          <center><h2>Oh snap!</h2></center>
+      </div>
+      <div class="message">
+          <center><h4 style="color:#ccc;">Your username or password wrong</h4></center>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <center><button type="button" style="border-radius:40px;width:250px;" class="btn-danger" data-dismiss="modal">OK</button></center>
+      </div>
+    </div>
+    
+  </div>
+</div>
 
 
 
@@ -66,7 +86,7 @@ session_start();
       // if username and password not matched
   ?>
       <script>
-        alert("Sorry User  name and password Not matched!!!");
+        $('#myModal').modal('show');
       </script>
   <?php
     }
